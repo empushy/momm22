@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<!--
+	Transit by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Urgency of Push | MoMM22</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <style>
+            html {
+              scroll-behavior: smooth;
+            }
+            
+            .sticky {
+              position: fixed;
+              top: 0;
+              background-color: #ffffff;
+              z-index: 9999;
+              width: 55rem;
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            }
+
+            .sticky + .content {
+              padding-top: 102px;
+            }
+            
+            .shadow-1 {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="header">
+						<a href="https://nldb2022.prhlt.upv.es/" target="_blank" class="logo"><strong>Paper Submitted ➡ MoMM22 🤞</strong></a>
+						<nav>
+                            <!--<a href="/elements.html">Authors</a>
+                            <a href="/elements.html">Resources</a>-->
+                            <a href="#contact">📧 Contact</a>
+						</nav>
+					</header
+
+				<!-- Banner -->
+					<section class="main">
+						<header class="invert accent2">
+							<h1>Now, Later, Never:<br/> A Study of Urgency in Mobile Push-notifications</h1>
+							<h5>Beatriz Esteves, Kieran Fraser, Shridhar Kulkarni, Owen Conlan, Víctor Rodríguez-Doncel</h5>
+                            
+						</header>
+                        <div class="row gtr-200">
+							<div class="col-12 col-12-medium">
+                                
+                                <span class="image left shadow-1" style="width: 45%;"><img src="images/paper_image.png" alt="" /></span>
+                                <h4>Paper Overview</h4>
+                                <p style="text-align: justify">Push-notifications, by design, attempt to grab the attention of subscribers and impart new or valuable information in a particular context. These nudges are commonly initiated by marketing teams or autonomously via fixed rule sets and therefore, subsequent delivery interruptions tend to conflict with subscriber priorities and activities. In this work, we present an ontology used to aid in the annotation of <i>urgency</i> within a notification, based on its text content. We also demonstrate a variety of models capable of distinguishing multiple levels of urgency in a notification which could be used to help subscribers better prioritize information pushed at them, aid marketers creating campaigns and facilitate improved transparency with respect to the delivery-time chosen for pushed notifications.</p>
+                                
+                            </div>
+                        </div>
+					</section>
+                
+                    <section class="main special invert accent3">
+						<h4>Additional resources</h4>
+                        <ol style="list-style-position: inside;">
+                            <li><a href="#orsd">Short-version ORSD for the APN ontology</a></li>
+                            <li><a href="#numCTALabels">Notifications assigned to CTA labels</a></li>
+                        </ol>
+					</section>
+                
+                <section id="orsd" class="main">
+                    <div class="row gtr-200">
+                        <div class="col-12 col-12-medium">
+                            <h4>Short-version ORSD for the APN ontology</h4>
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>CQG1. Related to push-notification services</th>
+                                            <th>CQG2. Related to push-notification categorization</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CQ1. What is the content of the push-notification?</td>
+                                            <td>CQ4. What is the call-to-action (CTA) of the notification?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CQ2. Which service / application pushed the notification?</td>
+                                            <td>CQ5. Does the notification belong to a specific campaign type?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CQ3. What is the application type in relation to its content?</td>
+                                            <td> CQ6. How urgent is the notification?</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>CQ7. Does the notification have a clear target audience?</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>CQ8. Does the notification contain features which indicate personalization?</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="numCTALabels" class="main">
+                    <div class="row gtr-200">
+                        <div class="col-6 col-12-medium">
+                            <h4>Notifications assigned to CTA labels</h4>
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>CTA label</th>
+                                            <th># Notifications</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>discover</td>
+                                            <td>2633</td>
+                                        </tr>
+                                        <tr>
+                                            <td>awareness</td>
+                                            <td>1394</td>
+                                        </tr>
+                                        <tr>
+                                            <td>purchase</td>
+                                            <td>1172</td>
+                                        </tr>
+                                        <tr>
+                                            <td>reminder/advice/tip</td>
+                                            <td>763</td>
+                                        </tr>
+                                        <tr>
+                                            <td>social</td>
+                                            <td>577</td>
+                                        </tr>
+                                        <tr>
+                                            <td>watch</td>
+                                            <td>356</td>
+                                        </tr>
+                                        <tr>
+                                            <td>play</td>
+                                            <td>310</td>
+                                        </tr>
+                                        <tr>
+                                            <td>feedback</td>
+                                            <td>278</td>
+                                        </tr>
+                                        <tr>
+                                            <td>claim</td>
+                                            <td>151</td>
+                                        </tr>
+                                        <tr>
+                                            <td>download</td>
+                                            <td>120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>account management</td>
+                                            <td>99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+				<!-- Section -->
+					<!--<section class="main">
+                        
+					</section>-->
+
+				<!-- Spotlight -->
+					<!--<section class="main spotlight left invert accent1">
+						<div class="image filtered" data-position="center">
+							<img src="images/pic02.jpg" alt="" />
+						</div>
+						<div class="content">
+							<h2>Magna amet lorem</h2>
+							<p>Sed magna lorem ipsum etiam dolor et nullam consequat, et feugiat tempus consequat.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button">More</a></li>
+							</ul>
+						</div>
+					</section>-->
+
+				<!-- Section -->
+					<!--<section class="main special">
+						<h2>Etiam amet consequat</h2>
+						<p>Lorem ipsum dolor sit amet nullam consequat, feugiat nisl tempus<br />
+						adipiscing sed cursus. Ipsum tempus phasellus magna.</p>
+						<div class="slider-wrapper">
+							<div class="slider">
+								<article>
+									<a href="#" class="image filtered">
+										<img src="images/slide03.jpg" alt="" />
+									</a>
+									<div class="content">
+										<p>Aliquam feugiat magna consequat</p>
+									</div>
+								</article>
+								<article>
+									<a href="#" class="image filtered">
+										<img src="images/slide01.jpg" alt="" />
+									</a>
+									<div class="content">
+										<p>Dolor phaselllus et cursus nullam</p>
+									</div>
+								</article>
+								<article class="initial">
+									<a href="#" class="image filtered">
+										<img src="images/slide02.jpg" alt="" />
+									</a>
+									<div class="content">
+										<p>Ipsum dolor sit amet nullam feugiat</p>
+									</div>
+								</article>
+								<article>
+									<a href="#" class="image filtered">
+										<img src="images/slide03.jpg" alt="" />
+									</a>
+									<div class="content">
+										<p>Nisl lorem phasellus aliquam magna</p>
+									</div>
+								</article>
+								<article>
+									<a href="#" class="image filtered">
+										<img src="images/slide01.jpg" alt="" />
+									</a>
+									<div class="content">
+										<p>Adipiscing lorem nulla etiam dolor</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>-->
+
+				<!-- Section -->
+					<!--<section class="main special invert accent3">
+						<h2>Nullam dolor veroeros</h2>
+						<p>Sit amet nullam consequat, feugiat nisl tempus adipiscing sed consequat cursus.</p>
+						<form method="post" action="#" class="combined">
+							<input type="email" name="email" value="" placeholder="Your email address" />
+							<button type="submit" class="primary">Sign Up</button>
+						</form>
+					</section>-->
+
+				<!-- Section -->
+					<section id="contact" class="main special">
+						<h2>Get in touch</h2>
+						<p>Feel free to reach out to us regarding the research presented.</p>
+						<ul class="contact-icons">
+							<li>
+								<span class="icon major alt fa-envelope"></span>
+								<p>
+                                    <a href="mailto:kieran.fraser@adaptcentre.ie">kieran.fraser [at] adaptcentre.ie</a><br/>
+                                    <a href="#">beatriz.gesteves [at] upm.es</a>
+                                </p>
+								<p></p>
+							</li>
+							<li>
+								<span class="icon major alt fa-map"></span>
+								<p>ADAPT Centre,<br/>Trinity College Dublin,<br/>Ireland
+                                </p>
+							</li>
+							<li>
+								<span class="icon major alt fa-map"></span>
+								<p>Ontology Engineering Group,<br/>Universidad Politécnica de Madrid,<br/>Spain
+                                </p>
+							</li>
+						</ul>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<p class="copyright"></p>-->
+                        <span class="image fit"><img src="images/ei-banner.png" alt="" /></span>
+						<!--<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>-->
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+        
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("header");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+
+	</body>
+</html>
