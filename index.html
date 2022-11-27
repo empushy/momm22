@@ -76,8 +76,7 @@
                             <li><a href="#push">Push-notification and its components</a></li>
                             <li><a href="#annotation">Crowdsourced Annotation</a></li>
                             <li><a href="#app-stats">App Push Statistics</a></li>
-<!--                             <li><a href="#orsd">Short-version ORSD for the APN ontology</a></li>
-                            <li><a href="#numCTALabels">Notifications assigned to CTA labels</a></li> -->
+                            <li><a href="#test-stats">Text Features Statistics</a></li>
                         </ol>
 					</section>
                 
@@ -117,6 +116,62 @@
                             <li><i>Sports</i> apps were seen as the largest generator of notifications with each app pushing an average of 8 notifications daily, followed by <i>News & Magazines</i> (4 notifications).</li>
                             <li>The apps generating the least number of notifications every day on average were <i>Watch Apps</i> (1 notification), <i>Libraries & Demo</i> (1 notification) and <i>Augmented Reality</i> (1 notification).</li>
                         </ul>
+                    </section>
+
+                    <section id="test-stats" class="main">
+                        <h2 style="text-align: center;">Text Features Statistics</h2>
+                        <p>
+                            The <a href="https://advertools.readthedocs.io/en/master/" target="_blank">advertools</a>, 
+                            <a href="https://textblob.readthedocs.io/en/dev/" target="_blank">TextBlob</a> and 
+                            <a href="https://api.codeq.com/" target="https://api.codeq.com/">Codeq-NLP</a> 
+                            Python packages were used to engineer a number of text features which were shown to be 
+                            statistically significantly different across varying app category types, as is
+                            illustrated in the table below:
+                        </p>
+                        <div style="padding-left:15%;padding-right:15%;">
+                            <table>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>&#967;<sup>2</sup></th>
+                                    <th>p</th>
+                                </tr>
+                                <tr>
+                                    <td>count_stopwords</td>
+                                    <td>31526.06</td>
+                                    <td><0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>count_emojis</td>
+                                    <td>56577.36</td>
+                                    <td><0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>count_capital_words</td>
+                                    <td>16594.54</td>
+                                    <td><0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>count_characters</td>
+                                    <td>26342.83</td>
+                                    <td><0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>avg_word_length</td>
+                                    <td>18291.99</td>
+                                    <td><0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>count_words</td>
+                                    <td>22336.36</td>
+                                    <td><0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>count_numeric_chars</td>
+                                    <td>17007.64</td>
+                                    <td><0.01</td>
+                                </tr>
+                            </table>
+                        </div>
                     </section>
 
 <!--                 <section id="orsd" class="main">
