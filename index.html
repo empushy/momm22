@@ -77,6 +77,7 @@
                             <li><a href="#annotation">Crowdsourced Annotation</a></li>
                             <li><a href="#app-stats">App Push Statistics</a></li>
                             <li><a href="#test-stats">Text Features Statistics</a></li>
+                            <li><a href="#algorithms">Classification Algorithms</a></li>
                         </ol>
 					</section>
                 
@@ -87,7 +88,7 @@
 						</div>
                         <br>
                         <h4 style="text-align: center;">Key features of a common mobile push-notification:</h4>
-                        <ul style="padding-left:10%">
+                        <ul style="padding-left:10%;padding-right:10%;">
                             <li><b>Title</b> - the title of the notification as it appears in the notification drawer.</li>
                             <li><b>Ticker</b> - the text description of the notification as it appears in the notification drawer.</li>
                             <li><b>Icon</b> - the image related to the notification being pushed.</li>
@@ -101,7 +102,7 @@
                         <div style="text-align: center;">
 							<img src="images/annotation.png" height="200px" alt="" />
 						</div>
-                        <ul style="padding-left:10%">
+                        <ul style="padding-left:10%;padding-right:10%;">
                             <li><b>Notification Data:</b> A push-notification social listening tool, developed by <a href="https://www.empushy.com" target="_blank">EmPushy</a>, was used to collect a variety of features from notifications pushed in real-time over a period of 550 days. The social listening tool was subscribed to apps sourced from 37 categories of the Google Play Store providing a wide net to be cast for notifications associated with differing types and levels of urgency and relevancy.</li>
                             <li><b>Balancing Script:</b> A balancing script was created to ensure that notifications selected for annotation were evenly distributed amongst app categories and individual apps within those app categories. In addition, the text of the notification content was combined and converted to a sentence embedding then ranked using cosine similarity. Notifications which were least similar were included in the final data set for annotation.</li>
                             <li><b>Shared Ontology:</b> <a href="https://w3id.org/apn" target="_blank">APN</a> was used to educate the workers subscribed to the task of annotating push-notifications about the different categories of urgency that were identified and respective definitions.</li>
@@ -112,7 +113,7 @@
 
                     <section id="app-stats" class="main">
                         <h2 style="text-align: center;">App Push Statistics</h2>
-                        <ul style="padding-left:10%">
+                        <ul style="padding-left:10%;padding-right:10%;">
                             <li><i>Sports</i> apps were seen as the largest generator of notifications with each app pushing an average of 8 notifications daily, followed by <i>News & Magazines</i> (4 notifications).</li>
                             <li>The apps generating the least number of notifications every day on average were <i>Watch Apps</i> (1 notification), <i>Libraries & Demo</i> (1 notification) and <i>Augmented Reality</i> (1 notification).</li>
                         </ul>
@@ -120,7 +121,7 @@
 
                     <section id="test-stats" class="main">
                         <h2 style="text-align: center;">Text Features Statistics</h2>
-                        <p>
+                        <p style="padding-left:10%;padding-right:10%;">
                             The <a href="https://advertools.readthedocs.io/en/master/" target="_blank">advertools</a>, 
                             <a href="https://textblob.readthedocs.io/en/dev/" target="_blank">TextBlob</a> and 
                             <a href="https://api.codeq.com/" target="https://api.codeq.com/">Codeq-NLP</a> 
@@ -171,6 +172,39 @@
                                     <td><0.01</td>
                                 </tr>
                             </table>
+                        </div>
+                    </section>
+
+                    <section id="algorithms" class="main">
+                        <h2 style="text-align: center;">Classification Algorithms</h2>
+                        <div style="padding-left:10%;padding-right:10%;">
+                            Related research has shown that the following Machine Learning algorithms have worked well in classification tasks:
+                            <ul>
+                                <li>
+                                    <b>Naive Bayes:</b>
+                                    Zhang, H. (2004). The optimality of naive Bayes. In: <i>Proceedings of the the 17th International FLAIRS conference (FLAIRS2004)</i>. p. 562-567. URL: 
+                                    <a href="https://www.aaai.org/Papers/FLAIRS/2004/Flairs04-097.pdf" target="_blank">https://www.aaai.org/Papers/FLAIRS/2004/Flairs04-097.pdf</a></li>
+                                <li>
+                                    <b>Random Forest:</b>
+                                    Breiman, L. (2001). Random Forests. <i>Machine Learning</i>, 45(1), p. 5-32. URL:
+                                    <a href="https://doi.org/10.1023/A:1010933404324" target="_blank">https://doi.org/10.1023/A:1010933404324</a>
+                                </li>
+                                <li>
+                                    <b>AdaBoost:</b>
+                                    Hastie, T., Rosset, S., Zhu, J., & Zou, H. (2009). Multi-class AdaBoost. <i>Statistics and its Interface</i>, 2(3), p. 349-360. URL:
+                                    <a href="https://dx.doi.org/10.4310/SII.2009.v2.n3.a8" target="_blank">https://dx.doi.org/10.4310/SII.2009.v2.n3.a8</a>
+                                </li>
+                                <li>
+                                    <b>XGBoost:</b>
+                                    Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In: <i>Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'16)</i>. p. 785-794. URL:
+                                    <a href="https://doi.org/10.1145/2939672.2939785">https://doi.org/10.1145/2939672.2939785</a>
+                                </li>
+                            </ul>
+                            The annotated dataset was split into train (80%) and test (20%) sets and two problem transformation approaches were applied for facilitating multi-label classification:
+                            <ul>
+                                <li><b>Classifier Chains:</b> for every urgency label, a classifier was created and ordered as a chain such that the first classifier ingested only input features and the subsequent classifiers ingested the input features <i>and outputs of the previous classifiers</i> in turn. <a href="https://link.springer.com/article/10.1007/s10994-011-5256-5" target="_blank">More information</a></li>
+                                <li><b>Binary Relevance:</b> for every urgency label, a single binary-classifier was created. The final output was the union of predictions made by each individual classifier.</li>
+                            </ul>
                         </div>
                     </section>
 
