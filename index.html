@@ -74,6 +74,7 @@
 						<h4>Additional resources</h4>
                         <ol style="list-style-position: inside;">
                             <li><a href="#push">Push-notification and its components</a></li>
+                            <li><a href="#annotation">Crowdsourced Annotation</a></li>
 <!--                             <li><a href="#orsd">Short-version ORSD for the APN ontology</a></li>
                             <li><a href="#numCTALabels">Notifications assigned to CTA labels</a></li> -->
                         </ol>
@@ -84,7 +85,6 @@
 						<div style="text-align: center;">
 							<img src="images/noti_example.png" height="200px" alt="" />
 						</div>
-                        <!-- TODO: explanation of each component -->
                         <br>
                         <h4 style="text-align: center;">Key features of a common mobile push-notification:</h4>
                         <ul style="padding-left:10%">
@@ -95,6 +95,20 @@
                             <li><b>Date posted</b> - the date and time the notification was first pushed to the device, alerting the user.</li>
                         </ul>
 					</section>
+
+                    <section id="annotation" class="main">
+                        <h2 style="text-align: center;">Crowdsourced Annotation</h2>
+                        <div style="text-align: center;">
+							<img src="images/annotation.png" height="200px" alt="" />
+						</div>
+                        <ul style="padding-left:10%">
+                            <li><b>Notification Data:</b> A push-notification social listening tool, developed by <a href="https://www.empushy.com" target="_blank">EmPushy</a>, was used to collect a variety of features from notifications pushed in real-time over a period of 550 days. The social listening tool was subscribed to apps sourced from 37 categories of the Google Play Store providing a wide net to be cast for notifications associated with differing types and levels of urgency and relevancy.</li>
+                            <li><b>Balancing Script:</b> A balancing script was created to ensure that notifications selected for annotation were evenly distributed amongst app categories and individual apps within those app categories. In addition, the text of the notification content was combined and converted to a sentence embedding then ranked using cosine similarity. Notifications which were least similar were included in the final data set for annotation.</li>
+                            <li><b>Shared Ontology:</b> <a href="https://w3id.org/apn" target="_blank">APN</a> was used to educate the workers subscribed to the task of annotating push-notifications about the different categories of urgency that were identified and respective definitions.</li>
+                            <li><b>Gold Notifications & Test:</b> A gold-standard dataset was used to educate and evaluate workers as they proceeded with the task. Workers were required to annotate 20 notifications sampled from the gold-standard dataset before they could proceed. Workers were required to achieve a minimum <i>trust score</i> of 90% before beginning the task and maintain it throughout (a test question was scheduled to appear after every 20 annotations).</li>
+                            <li><b>Annotation:</b> For annotation, the <a href="https://appen.com/" target="_blank">Appen Platform</a> was used as it provided a global workforce and self-service tool set for creating and managing the annotation task at scale. Each notification instance was set to be annotated by at least 3 separate workers and this was extended up to 5 workers unless 3 workers were in agreement. The urgency labels were not mutually exclusive as notifications could be attributed multiple labels at once.</li>
+                        </ul>
+                    </section>
 
 <!--                 <section id="orsd" class="main">
                     <div class="row gtr-200">
