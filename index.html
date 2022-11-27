@@ -80,6 +80,7 @@
                             <li><a href="#algorithms">Classification Algorithms</a></li>
                             <li><a href="#baseline">Experiment 1 - Baseline</a></li>
                             <li><a href="#augmentation">Experiment 2 - Data Augmentation</a></li>
+                            <li><a href="#time">Experiment 3 - Time Expressions</a></li>
                         </ol>
 					</section>
                 
@@ -224,191 +225,98 @@
 						</div>
                     </section>
 
-<!--                 <section id="orsd" class="main">
-                    <div class="row gtr-200">
-                        <div class="col-12 col-12-medium">
-                            <h4>Short-version ORSD for the APN ontology</h4>
-                            <div class="table-wrapper">
-                                <table class="alt">
-                                    <thead>
-                                        <tr>
-                                            <th>CQG1. Related to push-notification services</th>
-                                            <th>CQG2. Related to push-notification categorization</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>CQ1. What is the content of the push-notification?</td>
-                                            <td>CQ4. What is the call-to-action (CTA) of the notification?</td>
-                                        </tr>
-                                        <tr>
-                                            <td>CQ2. Which service / application pushed the notification?</td>
-                                            <td>CQ5. Does the notification belong to a specific campaign type?</td>
-                                        </tr>
-                                        <tr>
-                                            <td>CQ3. What is the application type in relation to its content?</td>
-                                            <td> CQ6. How urgent is the notification?</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>CQ7. Does the notification have a clear target audience?</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>CQ8. Does the notification contain features which indicate personalization?</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    <section id="time" class="main">
+                        <h2 style="text-align: center;">Experiment 3 - Time Expressions</h2>
+                        <div style="padding-left:10%;padding-right:10%;">
+                            List of works used to extract time expressions from the notification text:
+                            <ul>
+                                <li>
+                                    <b>SemEval-2013 Task 1 - TempEval-3:</b> 
+                                    UzZaman, N., Llorens, H., Derczynski, L., Allen, J., Verhagen, M., & Pustejovsky, J. (2013). Evaluating time expressions, events, and temporal relations. In <i>Second Joint Conference on Lexical and Computational Semantics (* SEM), Volume 2: Proceedings of the Seventh International Workshop on Semantic Evaluation (SemEval 2013)</i>. p. 1-9. URL:
+                                    <a href="https://aclanthology.org/S13-2001.pdf" target="_blank">https://aclanthology.org/S13-2001.pdf</a>
+                                </li>
+                                <li>
+                                    <b>SemEval-2007 Task 15:</b>
+                                    Verhagen, M., Gaizauskas, R., Schilder, F., Hepple, M., Katz, G., & Pustejovsky, J. (2007). TempEval Temporal Relation Identification. In <i>Proceedings of the 4th International Workshop on Semantic Evaluations (SemEval-2007)</i>. p. 75-80. URL:
+                                    <a href="https://aclanthology.org/S07-1014.pdf" target="_blank">https://aclanthology.org/S07-1014.pdf</a>
+                                <li>
+                                    <b>SemEval-2010 Task 13: TempEval-2:</b>
+                                    Verhagen, M., Sauri, R., Caselli, T., & Pustejovsky, J. (2010). SemEval-2010 Task 13: TempEval-2. In <i>Proceedings of the 5th International Workshop on Semantic Evaluation</i>. p. 57-62. URL:
+                                    <a href="https://aclanthology.org/S10-1010.pdf" target="_blank">https://aclanthology.org/S10-1010.pdf</a>
+                                </li>
+                                <li>
+                                    <b>SemEval-2018 Task 6:</b>
+                                    Laparra, E., Xu, D., Elsayed, A., Bethard, S., & Palmer, M. (2018). Parsing Time Normalizations. In <i>Proceedings of the 12th International Workshop on Semantic Evaluation (SemEval-2018)</i>. p. 88-96. URL:
+                                    <a href="https://aclanthology.org/S18-1011.pdf" target="_blank">https://aclanthology.org/S18-1011.pdf</a>
+                                </li>
+                                <li>
+                                    <b>SemEval-2021 Task 10:</b>
+                                    Laparra, E., Su, X., Zhao, Y., Uzuner, O., Miller, T., & Bethard, S. (2021). Source-free domain adaptation for semantic processing. In <i>Proceedings of the 15th International Workshop on Semantic Evaluation (SemEval-2021)</i>. p. 348-356. URL:
+                                    <a href="https://aclanthology.org/2021.semeval-1.42/" target="_blank">https://aclanthology.org/2021.semeval-1.42/</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </section> -->
-                
-<!--                 <section id="numCTALabels" class="main">
-                    <div class="row gtr-200">
-                        <div class="col-6 col-12-medium">
-                            <h4>Notifications assigned to CTA labels</h4>
-                            <div class="table-wrapper">
-                                <table class="alt">
-                                    <thead>
-                                        <tr>
-                                            <th>CTA label</th>
-                                            <th># Notifications</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>discover</td>
-                                            <td>2633</td>
-                                        </tr>
-                                        <tr>
-                                            <td>awareness</td>
-                                            <td>1394</td>
-                                        </tr>
-                                        <tr>
-                                            <td>purchase</td>
-                                            <td>1172</td>
-                                        </tr>
-                                        <tr>
-                                            <td>reminder/advice/tip</td>
-                                            <td>763</td>
-                                        </tr>
-                                        <tr>
-                                            <td>social</td>
-                                            <td>577</td>
-                                        </tr>
-                                        <tr>
-                                            <td>watch</td>
-                                            <td>356</td>
-                                        </tr>
-                                        <tr>
-                                            <td>play</td>
-                                            <td>310</td>
-                                        </tr>
-                                        <tr>
-                                            <td>feedback</td>
-                                            <td>278</td>
-                                        </tr>
-                                        <tr>
-                                            <td>claim</td>
-                                            <td>151</td>
-                                        </tr>
-                                        <tr>
-                                            <td>download</td>
-                                            <td>120</td>
-                                        </tr>
-                                        <tr>
-                                            <td>account management</td>
-                                            <td>99</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div style="padding-left:10%;padding-right:10%;">
+                            The figure below shows the performance improvement of the urgency classification algorithms 
+                            when time-expression information was included as an input feature.
+                            <div style="text-align: center;">
+                                <img src="images/results_exp_3.svg" alt="" />
                             </div>
+						</div>
+                        <div style="padding-left:10%;padding-right:10%;">
+                            The table below illustrates the 10 most frequent time-expressions identified.
                         </div>
-                    </div>
-                </section> -->
+                        <br>
+                        <div style="padding-left:25%;padding-right:25%;">
+                            <table>
+                                <tr>
+                                    <th>Time-expression Label</th>
+                                    <th>Num. Notifications</th>
+                                </tr>
+                                <tr>
+                                    <td>B-Calendar-Interval</td>
+                                    <td>2148</td>
+                                </tr>
+                                <tr>
+                                    <td>B-This</td>
+                                    <td>1288</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Period</td>
+                                    <td>830</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Number</td>
+                                    <td>658</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Frequency</td>
+                                    <td>574</td>
+                                </tr>
+                                <tr>
+                                    <td>B-After</td>
+                                    <td>440</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Year</td>
+                                    <td>366</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Part-Of-Day</td>
+                                    <td>322</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Season-Of-Year</td>
+                                    <td>287</td>
+                                </tr>
+                                <tr>
+                                    <td>B-Last</td>
+                                    <td>267</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
 
-				<!-- Section -->
-					<!--<section class="main">
-                        
-					</section>-->
-
-				<!-- Spotlight -->
-					<!--<section class="main spotlight left invert accent1">
-						<div class="image filtered" data-position="center">
-							<img src="images/pic02.jpg" alt="" />
-						</div>
-						<div class="content">
-							<h2>Magna amet lorem</h2>
-							<p>Sed magna lorem ipsum etiam dolor et nullam consequat, et feugiat tempus consequat.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button">More</a></li>
-							</ul>
-						</div>
-					</section>-->
-
-				<!-- Section -->
-					<!--<section class="main special">
-						<h2>Etiam amet consequat</h2>
-						<p>Lorem ipsum dolor sit amet nullam consequat, feugiat nisl tempus<br />
-						adipiscing sed cursus. Ipsum tempus phasellus magna.</p>
-						<div class="slider-wrapper">
-							<div class="slider">
-								<article>
-									<a href="#" class="image filtered">
-										<img src="images/slide03.jpg" alt="" />
-									</a>
-									<div class="content">
-										<p>Aliquam feugiat magna consequat</p>
-									</div>
-								</article>
-								<article>
-									<a href="#" class="image filtered">
-										<img src="images/slide01.jpg" alt="" />
-									</a>
-									<div class="content">
-										<p>Dolor phaselllus et cursus nullam</p>
-									</div>
-								</article>
-								<article class="initial">
-									<a href="#" class="image filtered">
-										<img src="images/slide02.jpg" alt="" />
-									</a>
-									<div class="content">
-										<p>Ipsum dolor sit amet nullam feugiat</p>
-									</div>
-								</article>
-								<article>
-									<a href="#" class="image filtered">
-										<img src="images/slide03.jpg" alt="" />
-									</a>
-									<div class="content">
-										<p>Nisl lorem phasellus aliquam magna</p>
-									</div>
-								</article>
-								<article>
-									<a href="#" class="image filtered">
-										<img src="images/slide01.jpg" alt="" />
-									</a>
-									<div class="content">
-										<p>Adipiscing lorem nulla etiam dolor</p>
-									</div>
-								</article>
-							</div>
-						</div>
-					</section>-->
-
-				<!-- Section -->
-					<!--<section class="main special invert accent3">
-						<h2>Nullam dolor veroeros</h2>
-						<p>Sit amet nullam consequat, feugiat nisl tempus adipiscing sed consequat cursus.</p>
-						<form method="post" action="#" class="combined">
-							<input type="email" name="email" value="" placeholder="Your email address" />
-							<button type="submit" class="primary">Sign Up</button>
-						</form>
-					</section>-->
-
-				<!-- Section -->
 					<section id="contact" class="main special">
 						<h2>Get in touch</h2>
 						<p>Feel free to reach out to us regarding the research presented.</p>
